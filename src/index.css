@@ -1,0 +1,36 @@
+/* 1. Import Tailwind CSS (correct v4 syntax) */
+@import "tailwindcss";
+
+/* 2. Theme tokens (Tailwind v4 style) */
+@theme {
+  --color-navy: #0f172a;
+  --color-gold: #d4af37;
+  --color-gold-hover: #b8952e;
+  --color-soft-bg: #fdfcfb;
+
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Poppins", sans-serif;
+}
+
+/* 3. Base styles inside @layer base */
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-soft-bg);
+    color: var(--color-navy);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.025em; /* Replaced @apply tracking-tight */
+  }
+
+  ::selection {
+    background-color: var(--color-gold);
+    color: var(--color-navy);
+  }
+}
