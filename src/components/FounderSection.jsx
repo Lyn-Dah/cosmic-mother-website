@@ -1,107 +1,101 @@
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Heart, Globe, Users } from "lucide-react";
-// import founder from "../assets/images/founder.jpg";
-
-// const innovators = [
-//   {
-//     name: "Hajia Najat Azu",
-//     role: "Founder & President",
-//     image: founder,
-//     bio: "A dedicated philanthropist with a vision to uplift the marginalized. Hajia Najat, leads the association with a focus on sustainable humanitarian aid and community development."
-//   },
-// ];
-
-// export default function FounderSection() {
-//   return (
-//     <section id="founder" className="bg-gray-50 py-20 px-6">
-//       <div className="container mx-auto text-center">
-//         <motion.h2
-//           className="text-4xl font-extrabold text-gray-800 mb-6"
-//           initial={{ opacity: 0, y: -20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//           viewport={{ once: true }}
-//         >
-//           🤝 Meet Our Founder
-//         </motion.h2>
-
-//         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto mt-6">
-//           <motion.div
-//             className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-red-500 flex items-start gap-4"
-//             initial={{ opacity: 0, x: -30 }}
-//             whileInView={{ opacity: 1, x: 0 }}
-//             viewport={{ once: true }}
-//           >
-//             <Heart className="text-red-500 w-12 h-12 shrink-0" />
-//             <p className="text-gray-700 text-lg leading-relaxed text-left">
-//               Our mission is to bridge the gap for those in need. We strive to make humanitarian 
-//               support accessible, ensuring that every individual we reach has a path toward 
-//               a dignified and hopeful future.
-//             </p>
-//           </motion.div>
-
-//           <motion.div
-//             className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-blue-500 flex items-start gap-4"
-//             initial={{ opacity: 0, x: 30 }}
-//             whileInView={{ opacity: 1, x: 0 }}
-//             viewport={{ once: true }}
-//           >
-//             <Users className="text-blue-500 w-12 h-12 shrink-0" />
-//             <p className="text-gray-700 text-lg leading-relaxed text-left">
-//               Through "Solidarité aux Démunis," we organize local and international 
-//               outreach programs that provide food, education, and healthcare support 
-//               to vulnerable communities.
-//             </p>
-//           </motion.div>
-//         </div>
-
-//         <div className="flex justify-center mt-12">
-//           {innovators.map((innovator, index) => (
-//             <motion.div
-//               key={index}
-//               className="bg-white shadow-xl rounded-lg overflow-hidden p-8 max-w-sm transform transition-all hover:scale-105"
-//               initial={{ opacity: 0, y: 30 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               viewport={{ once: true }}
-//             >
-//               <img
-//                 src={innovator.image}
-//                 alt={innovator.name}
-//                 className="w-32 h-32 mx-auto rounded-full object-cover mb-4 border-4 border-green-500"
-//               />
-//               <h3 className="text-2xl font-semibold text-gray-800">{innovator.name}</h3>
-//               <p className="text-green-600 font-medium mb-3">{innovator.role}</p>
-//               <p className="text-gray-600 text-sm leading-relaxed">{innovator.bio}</p>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React from "react";
-import founderImg from "../assets/images/founder.jpg";
+import { motion } from "framer-motion";
+import { Quote, Award, Heart, CheckCircle2 } from "lucide-react";
+// Replace with the actual path to the Founder's portrait
+import founderImg from "../assets/images/founder.jpg"; 
 
 export default function FounderSection() {
   return (
-    <section className="py-24 bg-navy text-white">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
-        <div className="md:w-1/2 relative">
-          <div className="absolute -top-4 -left-4 w-full h-full border-2 border-gold rounded-2xl"></div>
-          <img src={founderImg} alt="Agnes Joy Aryee" className="relative z-10 rounded-2xl grayscale hover:grayscale-0 transition-all duration-700 shadow-2xl" />
-        </div>
-        
-        <div className="md:w-1/2">
-          <h4 className="text-gold font-bold uppercase tracking-widest text-sm mb-4">Leadership</h4>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Hajia Najat Azu</h2>
-          <p className="text-gray-400 text-lg italic mb-6">"Our mission is to ensure no one is left behind in the shadows of society."</p>
-          <p className="text-gray-300 leading-relaxed mb-8">
-            Hajia Najat Azu leads the Cosmic Mother of Bongo Association with a singular vision: to create a 
-            global network of solidarity. Her background in strategic leadership ensures that 
-            every project is handled with precision and heart.
-          </p>
-          <div className="h-1 w-20 bg-gold"></div>
+    <section className="py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-6">
+        <div className="flex flex-col lg:flex-row items-center gap-16">
+          
+          {/* --- Image Side --- */}
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="lg:w-5/12 relative"
+          >
+            {/* Decorative Background Elements */}
+            <div className="absolute -top-10 -left-10 w-40 h-40 bg-gold/10 rounded-full blur-3xl" />
+            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-navy/5 rounded-full blur-3xl" />
+            
+            <div className="relative z-10 rounded-4xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border-8 border-white">
+              <img 
+                src={founderImg} 
+                alt="Founder of Cosmic Mother Association" 
+                className="w-full aspect-4/5 object-cover"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-linear-to-t from-navy/90 to-transparent p-8 text-white">
+                <p className="font-serif italic text-lg text-gold">"Service is the rent we pay for our room here on earth."</p>
+              </div>
+            </div>
+
+            {/* Experience Badge */}
+            <motion.div 
+              initial={{ x: 20, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ delay: 0.5 }}
+              className="absolute top-12 -right-8 bg-gold text-navy p-6 rounded-2xl shadow-xl z-20 hidden md:block"
+            >
+              <div className="text-3xl font-black leading-none">15+</div>
+              <div className="text-[10px] uppercase font-bold tracking-widest mt-1">Years of Advocacy</div>
+            </motion.div>
+          </motion.div>
+
+          {/* --- Content Side --- */}
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="lg:w-7/12 space-y-8"
+          >
+            <div className="space-y-4">
+              <div className="inline-flex items-center gap-2 text-gold font-bold tracking-[0.2em] uppercase text-xs">
+                <Award size={16} /> Meet Our Founder
+              </div>
+              <h2 className="text-5xl font-bold text-navy font-serif leading-tight">
+                A Visionary Heart for <span className="text-gold italic">Global Change.</span>
+              </h2>
+            </div>
+
+            <p className="text-gray-600 text-lg leading-relaxed first-letter:text-5xl first-letter:font-bold first-letter:text-navy first-letter:mr-3 first-letter:float-left">
+              Driven by a deep-seated passion for humanitarian progress, our founder established the 
+              Cosmic Mother of Bongo Association to bridge the gap between resources in France 
+              and the essential needs of communities in Ghana. Her journey is one of resilience, 
+              faith, and an unwavering commitment to the underprivileged.
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                "Global Humanitarian Leader",
+                "Educational Reform Advocate",
+                "Community Empowerment Expert",
+                "Cultural Bridge Builder"
+              ].map((point, i) => (
+                <div key={i} className="flex items-center gap-3">
+                  <CheckCircle2 className="text-gold shrink-0" size={20} />
+                  <span className="text-navy font-semibold text-sm">{point}</span>
+                </div>
+              ))}
+            </div>
+
+            <div className="pt-6 border-t border-gray-100 flex items-center gap-6">
+              <div>
+                <h4 className="text-xl font-bold text-navy">Hajia Najat Azu</h4>
+                <p className="text-gray-500 text-sm">Founder & Visionary, Cosmic Mother Association of Bongo</p>
+              </div>
+              <div className="h-12 w-px bg-gray-200 hidden md:block" />
+              <div className="hidden md:flex gap-4">
+                <Heart className="text-gold fill-gold/20" />
+                <span className="text-gray-400 text-xs italic max-w-37.5">
+                  Dedicated to making a difference.
+                </span>
+              </div>
+            </div>
+          </motion.div>
+
         </div>
       </div>
     </section>

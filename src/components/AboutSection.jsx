@@ -1,136 +1,7 @@
-
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { CheckCircle, ShieldCheck, Users, Leaf } from "lucide-react"; // Added these imports
-// import productImage1 from "../assets/images/product5.jpg";
-
-// export default function AboutSection() {
-//   const benefits = [
-//     { icon: <CheckCircle className="text-green-600 w-8 h-8" />, title: "Effective Support", text: "Proven initiatives that ensure real change in the community." },
-//     { icon: <ShieldCheck className="text-green-600 w-8 h-8" />, title: "Safe & Transparent", text: "Every donation is handled with the highest level of integrity." },
-//     { icon: <Users className="text-green-600 w-8 h-8" />, title: "Empowering Lives", text: "Focusing on long-term growth for the needy and vulnerable." },
-//     { icon: <Leaf className="text-green-600 w-8 h-8" />, title: "Sustainable Future", text: "Building programs that preserve dignity and promote self-sufficiency." },
-//   ];
-
-//   return (
-//     <section className="py-20 bg-linear-to-b from-white to-gray-100">
-//       <div className="container mx-auto px-6 md:px-12 lg:px-16 text-center">
-//         <motion.h2
-//           className="text-4xl font-extrabold text-gray-800 mb-6"
-//           initial={{ opacity: 0, y: -20 }}
-//           whileInView={{ opacity: 1, y: 0 }}
-//         >
-//           🌿 About Us
-//         </motion.h2>
-//         <p className="text-gray-600 text-lg max-w-2xl mx-auto mb-12">
-//           Cosmic Mother of Bongo Association, France is a humanitarian organization dedicated to caring for the needy and uplifting vulnerable communities.
-//           We believe in empowering lives through compassion, innovation, and shared values.
-// // Our work is guided by three core objectives:
-// // Human Innovation – Supporting initiatives that improve the well-being, creativity, and potential of individuals and communities.
-// // Educational Solidarity – Promoting access to learning, training, and educational support for children, youth, and adults.
-// // Cultural Projection – Preserving and celebrating cultural heritage while promoting unity, identity, and cross-cultural understanding.
-// // Together, we strive to create meaningful impact and inspire positive change across generations.
-//         </p>
-
-//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
-//           {benefits.map((item, index) => (
-//             <motion.div
-//               key={index}
-//               className="bg-white p-6 rounded-xl shadow-lg flex flex-col items-center text-center"
-//               initial={{ opacity: 0, y: 20 }}
-//               whileInView={{ opacity: 1, y: 0 }}
-//               transition={{ delay: 0.2 * index }}
-//               whileHover={{ scale: 1.05 }}
-//             >
-//               <div className="mb-4">{item.icon}</div>
-//               <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
-//               <p className="text-gray-600 text-sm mt-2">{item.text}</p>
-//             </motion.div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
-// import React from "react";
-// import { motion } from "framer-motion";
-// import { Heart, Globe, ShieldCheck, Zap } from "lucide-react";
-
-// const missionPillars = [
-//   { 
-//     icon: <Heart className="text-emerald-500" />, 
-//     title: "Compassion First", 
-//     desc: "Putting the human element at the center of every relief effort." 
-//   },
-//   { 
-//     icon: <Globe className="text-blue-500" />, 
-//     title: "Global Reach", 
-//     desc: "Bridging resources from France to communities in need worldwide." 
-//   },
-//   { 
-//     icon: <ShieldCheck className="text-emerald-500" />, 
-//     title: "Accountability", 
-//     desc: "100% transparency in how every euro is spent for the needy." 
-//   },
-//   { 
-//     icon: <Zap className="text-yellow-500" />, 
-//     title: "Immediate Action", 
-//     desc: "Rapid response teams for food security and emergency aid." 
-//   },
-// ];
-
-// export default function AboutSection() {
-//   return (
-//     <section className="py-24 bg-white">
-//       <div className="container mx-auto px-6">
-//         <div className="flex flex-col lg:flex-row items-center gap-16">
-          
-//           {/* Left Side: Impactful Text */}
-//           <div className="lg:w-1/2">
-//             <h2 className="text-sm font-bold tracking-[0.2em] text-emerald-600 uppercase mb-4">
-//               Our Association
-//             </h2>
-//             <h3 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-//               Small acts of kindness, <br />
-//               <span className="text-emerald-600 underline decoration-emerald-200 underline-offset-8">huge global impact.</span>
-//             </h3>
-//             <p className="text-gray-600 text-lg leading-relaxed mb-8">
-//               Based in France, Cosmic Mother of Bongo Association is more than just a charity. 
-//               We are a movement dedicated to restoring dignity to the marginalized through 
-//               sustainable humanitarian programs.
-//             </p>
-//             <button className="text-emerald-600 font-bold flex items-center gap-2 group">
-//               Read our full story 
-//               <span className="group-hover:translate-x-2 transition-transform">→</span>
-//             </button>
-//           </div>
-
-//           {/* Right Side: Modern Grid */}
-//           <div className="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
-//             {missionPillars.map((item, i) => (
-//               <motion.div 
-//                 key={i}
-//                 whileHover={{ y: -10 }}
-//                 className="p-8 rounded-3xl bg-gray-50 border border-gray-100 shadow-sm hover:shadow-xl hover:bg-white transition-all duration-300"
-//               >
-//                 <div className="w-12 h-12 bg-white rounded-2xl shadow-inner flex items-center justify-center mb-6">
-//                   {item.icon}
-//                 </div>
-//                 <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-//                 <p className="text-gray-500 text-sm leading-relaxed">{item.desc}</p>
-//               </motion.div>
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// }
-
 import React from "react";
 import { motion } from "framer-motion";
 import { Heart, ShieldCheck, Users, Globe } from "lucide-react";
+import aboutImage from "../assets/images/about-mission.jpg";
 
 const pillars = [
   { icon: <Heart size={32} />, title: "Compassion", text: "Direct support for the needy." },
@@ -141,17 +12,39 @@ const pillars = [
 
 export default function AboutSection() {
   return (
-    <section className="py-24 bg-soft-bg">
+    <section className="py-24 bg-[#fcfcfc] overflow-hidden">
       <div className="container mx-auto px-6">
+        
+        {/* --- Header --- */}
         <div className="text-center mb-16">
-          <h2 className="text-gold font-bold tracking-widest uppercase text-sm mb-3">Our Values</h2>
-          <h3 className="text-4xl md:text-5xl font-bold text-navy">Small Acts, Big Impact</h3>
+          <motion.h2 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-gold font-bold tracking-widest uppercase text-sm mb-3"
+          >
+            Our Core Values
+          </motion.h2>
+          <motion.h3 
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-4xl md:text-5xl font-bold text-navy"
+          >
+            Small Acts, Big Impact
+          </motion.h3>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* --- Pillars Grid --- */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-24">
           {pillars.map((item, idx) => (
             <motion.div 
               key={idx}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 }}
               whileHover={{ y: -10 }}
               className="p-10 rounded-2xl bg-white border border-gray-100 shadow-sm text-center group transition-all hover:border-gold/30 hover:shadow-xl"
             >
@@ -162,6 +55,65 @@ export default function AboutSection() {
               <p className="text-gray-500 text-sm leading-relaxed">{item.text}</p>
             </motion.div>
           ))}
+        </div>
+
+        {/* --- Narrative Write-up Section --- */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <h3 className="text-3xl font-bold text-navy font-serif italic">
+              Empowering Communities <br /> 
+              <span className="text-gold not-italic">Beyond Borders.</span>
+            </h3>
+            <p className="text-gray-600 leading-relaxed text-lg">
+              The Cosmic Mother of Bongo Association was founded on a simple yet powerful belief: 
+              that geography should never be a barrier to human kindness. Based in France but 
+              deeply rooted in the needs of global communities, we serve as a vital bridge 
+              for resources and hope.
+            </p>
+            <p className="text-gray-600 leading-relaxed">
+              Our initiatives range from supporting local schools in Ghana to providing direct 
+              relief for families in need. By combining French logistical excellence with 
+              on-the-ground local knowledge, we ensure that every contribution creates 
+              a measurable, sustainable difference in the lives of those who need it most.
+            </p>
+            
+            <div className="flex items-center gap-4 pt-4">
+              <div className="flex -space-x-2">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-gold/20 flex items-center justify-center overflow-hidden">
+                     <Heart size={16} className="text-gold" />
+                  </div>
+                ))}
+              </div>
+              <p className="text-sm font-medium text-navy">
+                Joined by over <span className="text-gold font-bold">500+</span> supporters worldwide
+              </p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="relative"
+          >
+            <div className="aspect-square md:aspect-video rounded-3xl overflow-hidden border-8 border-white shadow-2xl relative z-10">
+              <img 
+                src={aboutImage} 
+                alt="Cosmic Mother of Bongo Association Impact" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+            {/* Decorative Gold Accent Box */}
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-gold rounded-3xl z-0 opacity-20" />
+            {/* Decorative Navy Accent Box */}
+            <div className="absolute -top-6 -left-6 w-24 h-24 bg-navy rounded-3xl z-0 opacity-10" />
+          </motion.div>
         </div>
       </div>
     </section>
