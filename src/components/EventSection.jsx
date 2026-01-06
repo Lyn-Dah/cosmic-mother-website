@@ -93,7 +93,7 @@ export default function EventSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a 
-                href="YOUR_REGISTRATION_LINK" 
+                href="https://forms.gle/tsQrChym6jS8CU3u7" 
                 target="_blank" 
                 className="bg-navy text-white px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-gold hover:text-navy transition-all shadow-lg"
               >
