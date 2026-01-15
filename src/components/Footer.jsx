@@ -17,7 +17,7 @@ export default function Footer({ onDonateClick }) {
 
   // Social Media Links Configuration
   const socialLinks = [
-    { Icon: Facebook, url: "https://facebook.com/cosmicmother" },
+    { Icon: Facebook, url: "https://web.facebook.com/profile.php?id=61586570642748" },
     { Icon: Instagram, url: "https://instagram.com/cosmicmother_bongo" },
     { Icon: Linkedin, url: "https://linkedin.com/company/cosmic-mother-care" }
   ];
