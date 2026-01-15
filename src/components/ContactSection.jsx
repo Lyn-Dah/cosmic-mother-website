@@ -236,7 +236,7 @@ export default function ContactSection() {
               <p className="text-gray-400 text-sm mb-4">Follow us on social media</p>
               <div className="flex gap-4">
                 {[
-                  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+                  { icon: Facebook, href: "https://web.facebook.com/profile.php?id=61586570642748", label: "Facebook" },
                   { icon: Twitter, href: "https://twitter.com", label: "Twitter" },
                   { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
                   { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
