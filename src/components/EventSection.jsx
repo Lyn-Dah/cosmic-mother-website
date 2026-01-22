@@ -61,8 +61,8 @@ export default function EventSection() {
             className="lg:w-1/2 space-y-8"
           >
             <div className="space-y-4">
-              <h2 className="text-gold font-bold tracking-widest uppercase text-sm">Upcoming Fundraiser</h2>
-              <h3 className="text-4xl font-bold text-navy font-serif">69th Ghana Independence Day</h3>
+              <h2 className="text-gold font-bold tracking-widest uppercase text-sm">Upcoming Event</h2>
+              <h3 className="text-4xl font-bold text-navy font-serif">17th Region (Diaspora) Summit in Paris, France</h3>
               
               {/* COUNTDOWN DISPLAY */}
               <div className="flex gap-3 pt-4">
