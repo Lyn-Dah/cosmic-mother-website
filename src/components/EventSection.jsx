@@ -87,7 +87,7 @@ export default function EventSection() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-navy font-semibold">
               <div className="flex items-center gap-3"><Calendar className="text-gold" /> Sat, 14th March 2026</div>
-              <div className="flex items-center gap-3"><Clock className="text-gold" /> 3:00 PM - 9:00 PM CET</div>
+              <div className="flex items-center gap-3"><Clock className="text-gold" /> 1:00 PM - 9:00 PM CET</div>
               <div className="flex items-center gap-3"><MapPin className="text-gold" /> 6, AVENUE JULES GUESDE  93240 STAINS-FRANCE</div>
             </div>
 
@@ -100,7 +100,7 @@ export default function EventSection() {
                 <Ticket size={20} /> Register to Attend
               </a>
               <a 
-                href="YOUR_VISA_LINK" 
+                href="https://forms.gle/WDMbuBiaydLkbKAm8" 
                 target="_blank" 
                 className="border-2 border-navy text-navy px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-navy hover:text-white transition-all"
               >
