@@ -11,8 +11,8 @@ export default function EventSection() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Target date: March 14, 2026 at 3:00 PM CET
-    const targetDate = new Date("March 14, 2026 15:00:00").getTime();
+    // Target date: June 07, 2026 at 2:00 PM GMT
+    const targetDate = new Date("June 07, 2026 14:00:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -62,7 +62,7 @@ export default function EventSection() {
           >
             <div className="space-y-4">
               <h2 className="text-gold font-bold tracking-widest uppercase text-sm">Upcoming Event</h2>
-              <h3 className="text-4xl font-bold text-navy font-serif">17th Region (Diaspora) Summit in Paris, France</h3>
+              <h3 className="text-4xl font-bold text-navy font-serif"> Cosmic Agripreneur Summit Launch,Ghana</h3>
               
               {/* COUNTDOWN DISPLAY */}
               <div className="flex gap-3 pt-4">
@@ -80,15 +80,17 @@ export default function EventSection() {
               </div>
 
               <p className="text-gray-600 text-lg pt-4">
-                Join us in France for an evening of culture and unity. International participants 
-                requiring visa assistance must fill out the invitation form below.
+                Join us at the COSMIC Agripreneur Summit Launch 2026, 
+                where innovation meets opportunity in agriculture. Under the theme"Smart Farming, Smart Business, Smart Future,"
+                This summit will bring together industry leaders, innovators, and aspiring agripreneurs to explore the future of sustainable agribusiness and technology-driven farming.
+
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-navy font-semibold">
-              <div className="flex items-center gap-3"><Calendar className="text-gold" /> Sat, 14th March 2026</div>
-              <div className="flex items-center gap-3"><Clock className="text-gold" /> 1:00 PM - 9:00 PM CET</div>
-              <div className="flex items-center gap-3"><MapPin className="text-gold" /> 6, AVENUE JULES GUESDE  93240 STAINS-FRANCE</div>
+              <div className="flex items-center gap-3"><Calendar className="text-gold" /> Sun, 7th June 2026</div>
+              <div className="flex items-center gap-3"><Clock className="text-gold" /> 2:00 PM </div>
+              <div className="flex items-center gap-3"><MapPin className="text-gold" /> Kwahu Tafo Durbar Grounds</div>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -104,7 +106,7 @@ export default function EventSection() {
                 target="_blank" 
                 className="border-2 border-navy text-navy px-8 py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-navy hover:text-white transition-all"
               >
-                <FileText size={20} /> Visa Invitation Form
+              
               </a>
             </div>
           </motion.div>
